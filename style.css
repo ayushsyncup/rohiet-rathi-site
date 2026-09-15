@@ -71,6 +71,20 @@ nav {
 
 .nav-links a:hover { color: var(--accent-dark); }
 
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px;
+  margin-left: 10px;
+  color: var(--text);
+  flex-shrink: 0;
+}
+
+.nav-toggle svg { width: 20px; height: 20px; display: block; }
+
 /* Hero */
 .hero {
   padding: 110px 0 90px;
@@ -369,15 +383,42 @@ footer a:hover { color: var(--accent-dark); }
 .whatsapp-float svg { width: 30px; height: 30px; }
 
 @media (max-width: 860px) {
-  .hero { grid-template-columns: 1fr; padding-top: 60px; }
+  .hero { grid-template-columns: 1fr; padding: 40px 0 50px; gap: 32px; }
   .about-grid, .invest-grid { grid-template-columns: 1fr 1fr; }
   .feature { grid-template-columns: 1fr; padding: 32px; }
   .feature-stats { grid-template-columns: 1fr 1fr; }
-  nav .nav-links { display: none; }
   .hero h1 { font-size: 36px; }
+
+  nav { flex-wrap: wrap; position: relative; padding: 14px 20px; }
+  .nav-toggle { display: inline-flex; align-items: center; justify-content: center; }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    order: 3;
+    margin-top: 14px;
+    border-top: 1px solid var(--border);
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: 13px 2px; border-bottom: 1px solid var(--border); }
+
+  .container { padding: 0 20px; }
+}
+
+@media (max-width: 640px) {
+  .about-grid, .invest-grid, .brand-grid, .item-grid, .highlight-grid { grid-template-columns: 1fr !important; }
+  .customer-grid { grid-template-columns: 1fr 1fr !important; gap: 12px !important; }
+  .feature-stats { grid-template-columns: 1fr 1fr; }
+  .hero h1 { font-size: 30px; }
+  section { padding: 56px 0; }
+  .hero-photo { height: 300px; }
 }
 
 @media (max-width: 560px) {
   .about-grid, .invest-grid { grid-template-columns: 1fr; }
   footer { flex-direction: column; gap: 10px; text-align: center; }
+  .whatsapp-float { width: 46px; height: 46px; bottom: 16px; right: 16px; }
+  .whatsapp-float svg { width: 24px; height: 24px; }
+  footer .container { flex-direction: column !important; gap: 10px !important; text-align: center; }
 }

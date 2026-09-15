@@ -21,6 +21,9 @@
       <a href="#company">Company</a>
       <a href="#contact">Contact</a>
     </div>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
     <a class="btn btn-primary" href="#contact" style="padding:10px 20px;font-size:14px;">Get in touch</a>
   </nav>
 </header>
@@ -200,5 +203,18 @@
   </div>
 </footer>
 
+
+<script>
+(function(){
+  var btn = document.querySelector('.nav-toggle');
+  var links = document.querySelector('.nav-links');
+  if (btn && links) {
+    btn.addEventListener('click', function(){ links.classList.toggle('open'); });
+    links.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){ links.classList.remove('open'); });
+    });
+  }
+})();
+</script>
 </body>
 </html>
