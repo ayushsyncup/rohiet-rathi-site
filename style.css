@@ -5,9 +5,10 @@
   --border: #E0DDD3;
   --text: #1F1E1D;
   --text-muted: #6B6862;
-  --accent: #D97757;
-  --accent-dark: #BD5D3A;
-  --accent-light: #F3E4DB;
+  --accent: #EC0082;
+  --accent-dark: #A3005A;
+  --accent-light: #FCE0EF;
+  --accent-gold: #DCA561;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -143,8 +144,8 @@ nav {
 }
 
 .hero-card .avatar {
-  width: 88px;
-  height: 88px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--accent), var(--accent-dark));
   display: flex;
