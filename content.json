@@ -1,0 +1,539 @@
+{
+  "main": {
+    "nav": {
+      "brandFirst": "Rohiet",
+      "brandSecond": "Rathi",
+      "buttonText": "Get in touch"
+    },
+    "hero": {
+      "eyebrow": "Entrepreneur · Investor · Founder",
+      "title": "Building & backing ventures across mobility, fashion, and distribution in India.",
+      "lead": "Rohiet Rathi is an entrepreneur and investor based in Pune, India, working across electric mobility, quick-commerce fashion, automotive care, and FMCG distribution, with over a decade of hands-on operating experience.",
+      "primaryButton": "View investments",
+      "linkedinUrl": "https://www.linkedin.com/in/rohiet-rathi-8a495818/",
+      "linkedinButton": "LinkedIn profile ↗",
+      "photo": "assets/rohiet-photo-full.jpg",
+      "cardName": "Rohiet Rathi",
+      "cardRole": "Entrepreneur / Investor / Founder",
+      "cardBio": "Based in Pune, Maharashtra. Holds an MSc in Innovation, Creativity & Entrepreneurship from Newcastle University.",
+      "stats": [
+        {
+          "number": "5",
+          "label": "Active ventures"
+        },
+        {
+          "number": "12+ yrs",
+          "label": "Logistics & distribution"
+        },
+        {
+          "number": "60+",
+          "label": "Distributor network"
+        },
+        {
+          "number": "500+",
+          "label": "Professional network"
+        }
+      ]
+    },
+    "about": {
+      "eyebrow": "Who he is",
+      "title": "Operator-first, investor by conviction.",
+      "text": "Rohiet's approach to building and backing companies comes from having run distribution and logistics operations first. Every investment and founding role since has been about applying that same operating discipline to new industries.",
+      "cards": [
+        {
+          "icon": "🎓",
+          "title": "Education",
+          "text": "MSc, Innovation, Creativity & Entrepreneurship, Newcastle University (2012–13). BBA, Marketing, MIT School of Management (2009–12)."
+        },
+        {
+          "icon": "⚡",
+          "title": "Focus areas",
+          "text": "Electric mobility & fleet leasing, quick-commerce fashion, automotive care, and FMCG distribution across Modern Trade and e-commerce."
+        },
+        {
+          "icon": "🤝",
+          "title": "Way of working",
+          "text": "Hands-on across sales, supply chain, and go-to-market. Takes operating roles (Director, Founder, MD) alongside capital, not just a cheque."
+        }
+      ]
+    },
+    "investments": {
+      "eyebrow": "Portfolio",
+      "title": "Investments & ventures",
+      "text": "Companies Rohiet is currently building, directing, or backing as an investor.",
+      "items": [
+        {
+          "name": "SyncUp",
+          "tag": "Investor / Advisor",
+          "role": "India's AI-powered professional networking platform",
+          "description": "SyncUp connects professionals and companies while eliminating manual resume screening using AI.",
+          "logo": "assets/syncup-logo.svg",
+          "wideLogo": false,
+          "websiteUrl": "https://www.syncup.in",
+          "linkText": "syncup.in ↗"
+        },
+        {
+          "name": "PositiEV Mobility",
+          "tag": "Director",
+          "role": "EV distribution & fleet mobility platform",
+          "description": "A tech-enabled platform for EV distribution, leasing, charging and maintenance, one integrated backend for OEMs, dealers, NBFCs and fleets.",
+          "logo": "https://www.google.com/s2/favicons?domain=positievmobility.com&sz=128",
+          "wideLogo": false,
+          "websiteUrl": "https://www.positievmobility.com",
+          "linkText": "positievmobility.com ↗"
+        },
+        {
+          "name": "Skipp",
+          "tag": "Associate Founder",
+          "role": "India's quick fashion marketplace",
+          "description": "On-demand fashion delivered in 30 minutes: branded clothing, shoes, bags and accessories via Zwoop Technologies.",
+          "logo": "https://www.google.com/s2/favicons?domain=skipp.co.in&sz=128",
+          "wideLogo": false,
+          "websiteUrl": "https://skipp.co.in",
+          "linkText": "skipp.co.in ↗"
+        },
+        {
+          "name": "Car Dhobi",
+          "tag": "Investor",
+          "role": "Made-in-India car care platform",
+          "description": "A complete car care solution built for the everyday car enthusiast, backed since March 2025.",
+          "logo": "https://www.google.com/s2/favicons?domain=cardhobi.co.in&sz=128",
+          "wideLogo": false,
+          "websiteUrl": "https://www.cardhobi.co.in",
+          "linkText": "cardhobi.co.in ↗"
+        },
+        {
+          "name": "Rohit's Supply And Logistics",
+          "tag": "Managing Director",
+          "role": "FMCG distribution, Pune, ROM & Goa",
+          "description": "Secondary distribution for top FMCG brands across Modern Trade and e-commerce, self-employed since 2019.",
+          "logo": "assets/rohits-logo.png",
+          "wideLogo": true,
+          "websiteUrl": "rohits/index.html",
+          "linkText": "View company page →"
+        }
+      ]
+    },
+    "flagship": {
+      "tag": "Flagship company",
+      "logo": "assets/rohits-logo.png",
+      "title": "Rohit's Supply And Logistics",
+      "text": "Founded in 2019 and led by Rohiet Rathi as Managing Director, Rohit's Supply And Logistics handles secondary distribution for major FMCG brands across Pune, Rest of Maharashtra and Goa, serving retail giants and e-commerce platforms with a network built for maximum fill-rate, on schedule, every time.",
+      "buttonText": "Visit company page",
+      "buttonUrl": "rohits/index.html",
+      "stats": [
+        {
+          "number": "2019",
+          "label": "Established"
+        },
+        {
+          "number": "₹50Cr+",
+          "label": "Annual turnover"
+        },
+        {
+          "number": "60+",
+          "label": "Distributors"
+        },
+        {
+          "number": "17+",
+          "label": "Brands carried"
+        },
+        {
+          "number": "12+ yrs",
+          "label": "Team experience"
+        },
+        {
+          "number": "Pune, ROM & Goa",
+          "label": "Operational territory"
+        }
+      ]
+    },
+    "contact": {
+      "eyebrow": "Let's connect",
+      "title": "Open to conversations on mobility, retail & distribution.",
+      "text": "Reach out for partnerships, deal flow, or a coffee chat.",
+      "linkedinButton": "Message on LinkedIn ↗",
+      "linkedinUrl": "https://www.linkedin.com/in/rohiet-rathi-8a495818/"
+    },
+    "footer": {
+      "copyright": "© 2026 Rohiet Rathi. All rights reserved.",
+      "companyLinkText": "Rohit's Supply And Logistics",
+      "linkedinText": "LinkedIn"
+    }
+  },
+  "company": {
+    "name": "Rohit's Supply And Logistics",
+    "logo": "rohits/assets/brand/rohits-logo.png",
+    "phone": "+919607977997",
+    "phoneDisplay": "+91-9607977997",
+    "email": "admin@therohits.com",
+    "address": "10/12, Dhawade Nagar, Pune-411048, Maharashtra, India",
+    "whatsappNumber": "919606455221",
+    "whatsappMessage": "Hi, I would like to discuss further on the services offered by your company. Kindly Connect - Thanks",
+    "callButtonText": "Call now",
+    "personalLinkText": "Rohiet Rathi ↗"
+  },
+  "rohits": {
+    "home": {
+      "eyebrow": "FMCG Distribution · Pune, ROM & Goa",
+      "title": "We don't just deliver goods. We deliver excellence.",
+      "lead": "Rohit's Supply And Logistics is a growth-oriented secondary distribution company, moving 17+ leading FMCG brands into Pune, Rest of Maharashtra and Goa's biggest retail and e-commerce networks since 2019.",
+      "primaryButton": "Send enquiry",
+      "secondaryButton": "About the company",
+      "cardName": "Rohit's Supply And Logistics",
+      "cardRole": "FMCG Distributor · Est. 2019",
+      "stats": [
+        {
+          "number": "₹50Cr+",
+          "label": "Annual turnover"
+        },
+        {
+          "number": "60+",
+          "label": "Distributors"
+        },
+        {
+          "number": "17+",
+          "label": "Brands carried"
+        },
+        {
+          "number": "12+ yrs",
+          "label": "Team experience"
+        }
+      ],
+      "whyEyebrow": "Why us",
+      "whyTitle": "Efficient. Experienced. Target-driven.",
+      "whyText": "An experienced and efficient team of Store Managers, Transporters and Loaders, dedicated to optimum distribution with maximum fill-rate, even under high-pressure, target-driven schedules.",
+      "highlights": [
+        {
+          "number": "2019",
+          "label": "Established"
+        },
+        {
+          "number": "Upto 10",
+          "label": "Team members"
+        },
+        {
+          "number": "Pune, ROM & Goa",
+          "label": "Operational territory"
+        },
+        {
+          "number": "MT + Ecom + QuickCom + SS",
+          "label": "Distribution channels"
+        }
+      ],
+      "brandsEyebrow": "Brands we carry",
+      "brandsTitle": "A portfolio of trusted names.",
+      "brandsText": "From chocolate and snacks to dairy and personal care.",
+      "ctaEyebrow": "Partner with us",
+      "ctaTitle": "Let's talk distribution."
+    },
+    "about": {
+      "eyebrow": "About us",
+      "title": "Delivering excellence, not just goods.",
+      "heroEyebrow": "Managing Director: Rohiet Rathi",
+      "heroLead": "A growth-oriented FMCG distribution company delivering excellence across Pune since 2019, from Modern Trade giants to e-commerce platforms.",
+      "text": "At Rohit's Supply And Logistics, we don't just deliver goods; we deliver excellence. We are a growth-oriented company with a relentless commitment to providing top-notch distribution services. Our founder and proprietor, Rohit Rathi, leads our dedicated team of Store Managers, Transporters, and Loaders, who collectively possess over 12 years of experience in the logistics industry. Our unwavering dedication to efficiency, even under high-pressure, target-driven schedules, ensures that we consistently achieve maximum fill rates within stipulated timeframes.",
+      "cards": [
+        {
+          "icon": "🎯",
+          "title": "Our mission",
+          "text": "To empower businesses with unparalleled distribution solutions: precision, reliability and innovation in every shipment, tailored to each client's needs so products reach their destination on time, every time."
+        },
+        {
+          "icon": "🌱",
+          "title": "Our vision",
+          "text": "To be the beacon of transformation in the logistics industry, defined by efficiency, sustainability, and client-centricity, setting new standards of excellence across the sector."
+        },
+        {
+          "icon": "🚚",
+          "title": "How we operate",
+          "text": "An experienced, efficient team of Store Managers, Transporters and Loaders dedicated to optimum distribution with maximum fill-rate, even under high-pressure, target-driven schedules."
+        }
+      ],
+      "factsheetTitle": "Company at a glance",
+      "factsheet": [
+        {
+          "label": "Nature of Business",
+          "value": "Trader"
+        },
+        {
+          "label": "Company CEO",
+          "value": "Rohit Rathi"
+        },
+        {
+          "label": "Total Number of Employees",
+          "value": "Upto 10 People"
+        },
+        {
+          "label": "Year of Establishment",
+          "value": "2019"
+        },
+        {
+          "label": "Legal Status of Firm",
+          "value": "Individual – Proprietor"
+        },
+        {
+          "label": "Annual Turnover",
+          "value": "Rs. 50 Crore+"
+        },
+        {
+          "label": "Operational Territory",
+          "value": "Pune, Rest of Maharashtra (ROM) & Goa"
+        },
+        {
+          "label": "GST No.",
+          "value": "27AYCPR1633G1ZI"
+        },
+        {
+          "label": "Address",
+          "value": "10/12, Dhawade Nagar, Pune-411048, Maharashtra, India"
+        }
+      ]
+    },
+    "products": {
+      "eyebrow": "Our brand portfolio",
+      "title": "17 brands. One distribution network.",
+      "lead": "From global confectionery names to homegrown Indian snack brands, explore every brand we carry across Pune.",
+      "ctaTitle": "Get in touch about stocking or supply."
+    },
+    "brands": [
+      {
+        "name": "Too Yumm",
+        "logo": "https://www.google.com/s2/favicons?domain=tooyumm.com&sz=128",
+        "websiteUrl": "https://tooyumm.com",
+        "page": "too-yumm"
+      },
+      {
+        "name": "McVities",
+        "logo": "https://www.google.com/s2/favicons?domain=mcvities.com&sz=128",
+        "websiteUrl": "https://www.mcvities.com",
+        "page": "mcvities"
+      },
+      {
+        "name": "Pillsbury",
+        "logo": "https://www.google.com/s2/favicons?domain=pillsbury.com&sz=128",
+        "websiteUrl": "https://www.pillsbury.com",
+        "page": "pillsbury"
+      },
+      {
+        "name": "Betty Crocker",
+        "logo": "https://www.google.com/s2/favicons?domain=bettycrocker.com&sz=128",
+        "websiteUrl": "https://www.bettycrocker.com",
+        "page": "betty-crocker"
+      },
+      {
+        "name": "Nature Valley",
+        "logo": "https://www.google.com/s2/favicons?domain=naturevalley.com&sz=128",
+        "websiteUrl": "https://www.naturevalley.com",
+        "page": "nature-valley"
+      },
+      {
+        "name": "Keya Foods",
+        "logo": "rohits/assets/brands/keya.png",
+        "websiteUrl": "https://keyafoods.com",
+        "page": "keya"
+      },
+      {
+        "name": "Britannia Dairy",
+        "logo": "https://www.google.com/s2/favicons?domain=britannia.co.in&sz=128",
+        "websiteUrl": "https://www.britannia.co.in",
+        "page": "britannia-dairy"
+      },
+      {
+        "name": "Beyond Snacks",
+        "logo": "rohits/assets/brands/beyond-snack.png",
+        "websiteUrl": "https://www.beyondsnack.in",
+        "page": "beyond-snacks"
+      },
+      {
+        "name": "Bikano",
+        "logo": "https://www.google.com/s2/favicons?domain=bikano.com&sz=128",
+        "websiteUrl": "https://www.bikano.com",
+        "page": "bikano"
+      },
+      {
+        "name": "Brillon Consumer Products",
+        "logo": "https://www.google.com/s2/favicons?domain=brillonconsumer.com&sz=128",
+        "websiteUrl": "https://www.brillonconsumer.com",
+        "page": "brillon-consumer-products"
+      },
+      {
+        "name": "Upakarma",
+        "logo": "rohits/assets/brands/upkarma.png",
+        "websiteUrl": "https://upakarma.com",
+        "page": "upkarma"
+      },
+      {
+        "name": "Godrej",
+        "logo": "rohits/assets/brands/godrej.png",
+        "websiteUrl": "https://www.godrejcp.com",
+        "page": "godrej"
+      },
+      {
+        "name": "Mankind",
+        "logo": "rohits/assets/brands/mankind.png",
+        "websiteUrl": "https://www.mankindpharma.com",
+        "page": "mankind"
+      },
+      {
+        "name": "Daffy",
+        "logo": "rohits/assets/brands/daffy.png",
+        "websiteUrl": "",
+        "page": "daffy"
+      },
+      {
+        "name": "Ravalgaon",
+        "logo": "rohits/assets/brands/ravalgaon.png",
+        "websiteUrl": "",
+        "page": "ravalgaon"
+      },
+      {
+        "name": "Lotus Chocolates",
+        "logo": "rohits/assets/brands/lotus-chocolates.png",
+        "websiteUrl": "https://www.lotuschocolate.com",
+        "page": "lotus-chocolates"
+      },
+      {
+        "name": "Reliance Consumer Products",
+        "logo": "rohits/assets/brands/reliance-consumer-products.png",
+        "websiteUrl": "",
+        "page": "reliance-consumer-products"
+      }
+    ],
+    "customers": {
+      "eyebrow": "Our Customers",
+      "title": "Trusted by retail & e-commerce leaders.",
+      "lead": "A distribution network of 60+ distributors across Pune, Rest of Maharashtra and Goa supplying some of the biggest names in Modern Trade, quick-commerce and e-commerce.",
+      "ctaEyebrow": "Become a customer",
+      "ctaTitle": "Want your outlet on this list?",
+      "ctaText": "Reach out to explore stocking our brand portfolio.",
+      "items": [
+        {
+          "name": "JioMart",
+          "logo": "rohits/assets/customers/jiomart.png",
+          "websiteUrl": "https://www.jiomart.com"
+        },
+        {
+          "name": "Swiggy Instamart",
+          "logo": "rohits/assets/customers/swiggy-instamart.png",
+          "websiteUrl": "https://www.swiggy.com/instamart"
+        },
+        {
+          "name": "Bharti Bazaar",
+          "logo": "rohits/assets/customers/bharti-bazaar.png",
+          "websiteUrl": ""
+        },
+        {
+          "name": "Blinkit",
+          "logo": "rohits/assets/customers/blinkit.png",
+          "websiteUrl": "https://blinkit.com"
+        },
+        {
+          "name": "DMart",
+          "logo": "rohits/assets/customers/dmart.png",
+          "websiteUrl": "https://www.dmart.in"
+        },
+        {
+          "name": "DMart Ready",
+          "logo": "rohits/assets/customers/dmart-ready.png",
+          "websiteUrl": "https://www.dmart.in"
+        },
+        {
+          "name": "Dorabjee's",
+          "logo": "rohits/assets/customers/dorabjees.png",
+          "websiteUrl": "https://dorabjees.com"
+        },
+        {
+          "name": "Dunzo",
+          "logo": "rohits/assets/customers/dunzo.png",
+          "websiteUrl": ""
+        },
+        {
+          "name": "FirstCry",
+          "logo": "rohits/assets/customers/firstcry.png",
+          "websiteUrl": "https://www.firstcry.com"
+        },
+        {
+          "name": "Flipkart",
+          "logo": "rohits/assets/customers/flipkart.png",
+          "websiteUrl": "https://www.flipkart.com"
+        },
+        {
+          "name": "Nature's Basket",
+          "logo": "rohits/assets/customers/natures-basket.png",
+          "websiteUrl": "https://www.naturesbasket.co.in"
+        },
+        {
+          "name": "Grahak Peth",
+          "logo": "rohits/assets/customers/grahak-peth.png",
+          "websiteUrl": ""
+        },
+        {
+          "name": "IndiaMart",
+          "logo": "rohits/assets/customers/indiamart.png",
+          "websiteUrl": "https://www.indiamart.com"
+        },
+        {
+          "name": "BigBasket",
+          "logo": "rohits/assets/customers/bigbasket.png",
+          "websiteUrl": "https://www.bigbasket.com"
+        },
+        {
+          "name": "More",
+          "logo": "rohits/assets/customers/more.jpg",
+          "websiteUrl": "https://more.in"
+        },
+        {
+          "name": "Naya Bazaar",
+          "logo": "rohits/assets/customers/naya-bazaar.png",
+          "websiteUrl": ""
+        },
+        {
+          "name": "NutriTap",
+          "logo": "rohits/assets/customers/nutritap.png",
+          "websiteUrl": "https://nutritap.in"
+        },
+        {
+          "name": "Reliance Smart",
+          "logo": "rohits/assets/customers/reliance-smart.png",
+          "websiteUrl": "https://www.relianceretail.com"
+        },
+        {
+          "name": "Reliance Fresh",
+          "logo": "rohits/assets/customers/reliance-fresh.png",
+          "websiteUrl": "https://www.relianceretail.com"
+        },
+        {
+          "name": "Venky's",
+          "logo": "rohits/assets/customers/venkys.png",
+          "websiteUrl": "https://venkys.com"
+        },
+        {
+          "name": "Amazon",
+          "logo": "rohits/assets/customers/amazon.png",
+          "websiteUrl": "https://www.amazon.in"
+        },
+        {
+          "name": "Zepto",
+          "logo": "rohits/assets/customers/zepto.jpg",
+          "websiteUrl": "https://www.zeptonow.com"
+        },
+        {
+          "name": "Wellness Forever",
+          "logo": "rohits/assets/customers/wellness-forever.png",
+          "websiteUrl": "https://www.wellnessforever.com"
+        },
+        {
+          "name": "30+ more outlets",
+          "logo": "",
+          "websiteUrl": ""
+        }
+      ]
+    },
+    "contact": {
+      "eyebrow": "Contact Us",
+      "title": "Let's talk about everything!",
+      "lead": "Reach out for enquiries on distribution, partnerships, or stocking a specific brand."
+    }
+  }
+}

@@ -14,7 +14,7 @@
 
 <header>
   <nav>
-    <a class="brand" href="#top">Rohiet <span>Rathi</span></a>
+    <a class="brand" href="#top"><i style="font-style:normal" data-c="main.nav.brandFirst">Rohiet</i> <span data-c="main.nav.brandSecond">Rathi</span></a>
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#investments">Investments</a>
@@ -25,7 +25,7 @@
     <button class="nav-toggle" aria-label="Toggle menu">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
-    <a class="btn btn-primary" href="#contact" style="padding:10px 20px;font-size:14px;">Get in touch</a>
+    <a class="btn btn-primary" href="#contact" style="padding:10px 20px;font-size:14px;" data-c="main.nav.buttonText">Get in touch</a>
   </nav>
 </header>
 
@@ -35,21 +35,21 @@
   <section id="about">
     <div class="container hero">
       <div>
-        <span class="eyebrow">Entrepreneur · Investor · Founder</span>
-        <h1>Building &amp; backing ventures across mobility, fashion, and distribution in India.</h1>
-        <p class="lead">Rohiet Rathi is an entrepreneur and investor based in Pune, India, working across electric mobility, quick-commerce fashion, automotive care, and FMCG distribution, with over a decade of hands-on operating experience.</p>
+        <span class="eyebrow" data-c="main.hero.eyebrow">Entrepreneur · Investor · Founder</span>
+        <h1 data-c="main.hero.title">Building &amp; backing ventures across mobility, fashion, and distribution in India.</h1>
+        <p class="lead" data-c="main.hero.lead">Rohiet Rathi is an entrepreneur and investor based in Pune, India, working across electric mobility, quick-commerce fashion, automotive care, and FMCG distribution, with over a decade of hands-on operating experience.</p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="#investments">View investments</a>
-          <a class="btn btn-outline" href="https://www.linkedin.com/in/rohiet-rathi-8a495818/" target="_blank" rel="noopener">LinkedIn profile ↗</a>
+          <a class="btn btn-primary" href="#investments" data-c="main.hero.primaryButton">View investments</a>
+          <a class="btn btn-outline" href="https://www.linkedin.com/in/rohiet-rathi-8a495818/" target="_blank" rel="noopener" data-c="main.hero.linkedinButton" data-c-href="main.hero.linkedinUrl">LinkedIn profile ↗</a>
         </div>
       </div>
       <div class="hero-card">
-        <img class="hero-photo" src="assets/rohiet-photo-full.jpg" alt="Rohiet Rathi">
+        <img class="hero-photo" src="assets/rohiet-photo-full.jpg" alt="Rohiet Rathi" data-c-src="main.hero.photo">
         <div class="hero-card-body">
-          <h3>Rohiet Rathi</h3>
-          <div class="role">Entrepreneur / Investor / Founder</div>
-          <p style="color:var(--text-muted); font-size:14.5px;">Based in Pune, Maharashtra. Holds an MSc in Innovation, Creativity &amp; Entrepreneurship from Newcastle University.</p>
-          <div class="stat-row">
+          <h3 data-c="main.hero.cardName">Rohiet Rathi</h3>
+          <div class="role" data-c="main.hero.cardRole">Entrepreneur / Investor / Founder</div>
+          <p style="color:var(--text-muted); font-size:14.5px;" data-c="main.hero.cardBio">Based in Pune, Maharashtra. Holds an MSc in Innovation, Creativity &amp; Entrepreneurship from Newcastle University.</p>
+          <div class="stat-row" data-list="main.hero.stats" data-tpl="stat">
             <div><div class="stat-num">5</div><div class="stat-label">Active ventures</div></div>
             <div><div class="stat-num">12+ yrs</div><div class="stat-label">Logistics &amp; distribution</div></div>
             <div><div class="stat-num">60+</div><div class="stat-label">Distributor network</div></div>
@@ -64,11 +64,11 @@
   <section class="alt">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Who he is</span>
-        <h2>Operator-first, investor by conviction.</h2>
-        <p>Rohiet's approach to building and backing companies comes from having run distribution and logistics operations first. Every investment and founding role since has been about applying that same operating discipline to new industries.</p>
+        <span class="eyebrow" data-c="main.about.eyebrow">Who he is</span>
+        <h2 data-c="main.about.title">Operator-first, investor by conviction.</h2>
+        <p data-c="main.about.text">Rohiet's approach to building and backing companies comes from having run distribution and logistics operations first. Every investment and founding role since has been about applying that same operating discipline to new industries.</p>
       </div>
-      <div class="about-grid">
+      <div class="about-grid" data-list="main.about.cards" data-tpl="aboutcard">
         <div class="about-card">
           <div class="icon">🎓</div>
           <h3>Education</h3>
@@ -92,11 +92,11 @@
   <section id="investments">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Portfolio</span>
-        <h2>Investments &amp; ventures</h2>
-        <p>Companies Rohiet is currently building, directing, or backing as an investor.</p>
+        <span class="eyebrow" data-c="main.investments.eyebrow">Portfolio</span>
+        <h2 data-c="main.investments.title">Investments &amp; ventures</h2>
+        <p data-c="main.investments.text">Companies Rohiet is currently building, directing, or backing as an investor.</p>
       </div>
-      <div class="invest-grid">
+      <div class="invest-grid" data-list="main.investments.items" data-tpl="invest">
 
         <div class="invest-card">
           <div class="invest-top">
@@ -162,15 +162,15 @@
     <div class="container">
       <div class="feature">
         <div>
-          <span class="tag">Flagship company</span>
-          <a href="rohits/index.html" aria-label="Rohit's Supply And Logistics"><img src="assets/rohits-logo.png" alt="Rohit's Supply And Logistics logo" style="display:block;height:64px;width:auto;margin:6px 0 14px;"></a>
-          <h2>Rohit's Supply And Logistics</h2>
-          <p>Founded in 2019 and led by Rohiet Rathi as Managing Director, Rohit's Supply And Logistics handles secondary distribution for major FMCG brands across Pune, Rest of Maharashtra and Goa, serving retail giants and e-commerce platforms with a network built for maximum fill-rate, on schedule, every time.</p>
+          <span class="tag" data-c="main.flagship.tag">Flagship company</span>
+          <a href="rohits/index.html" aria-label="Rohit's Supply And Logistics"><img src="assets/rohits-logo.png" alt="Rohit's Supply And Logistics logo" style="display:block;height:64px;width:auto;margin:6px 0 14px;" data-c-src="main.flagship.logo"></a>
+          <h2 data-c="main.flagship.title">Rohit's Supply And Logistics</h2>
+          <p data-c="main.flagship.text">Founded in 2019 and led by Rohiet Rathi as Managing Director, Rohit's Supply And Logistics handles secondary distribution for major FMCG brands across Pune, Rest of Maharashtra and Goa, serving retail giants and e-commerce platforms with a network built for maximum fill-rate, on schedule, every time.</p>
           <div class="hero-cta">
-            <a class="btn btn-primary" href="rohits/index.html">Visit company page</a>
+            <a class="btn btn-primary" href="rohits/index.html" data-c="main.flagship.buttonText" data-c-href="main.flagship.buttonUrl">Visit company page</a>
           </div>
         </div>
-        <div class="feature-stats">
+        <div class="feature-stats" data-list="main.flagship.stats" data-tpl="feat">
           <div class="box"><div class="num">2019</div><div class="label">Established</div></div>
           <div class="box"><div class="num">₹50Cr+</div><div class="label">Annual turnover</div></div>
           <div class="box"><div class="num">60+</div><div class="label">Distributors</div></div>
@@ -185,11 +185,11 @@
   <!-- CTA -->
   <section id="contact" class="cta-band">
     <div class="container">
-      <span class="eyebrow">Let's connect</span>
-      <h2>Open to conversations on mobility, retail &amp; distribution.</h2>
-      <p>Reach out for partnerships, deal flow, or a coffee chat.</p>
+      <span class="eyebrow" data-c="main.contact.eyebrow">Let's connect</span>
+      <h2 data-c="main.contact.title">Open to conversations on mobility, retail &amp; distribution.</h2>
+      <p data-c="main.contact.text">Reach out for partnerships, deal flow, or a coffee chat.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="https://www.linkedin.com/in/rohiet-rathi-8a495818/" target="_blank" rel="noopener">Message on LinkedIn ↗</a>
+        <a class="btn btn-primary" href="https://www.linkedin.com/in/rohiet-rathi-8a495818/" target="_blank" rel="noopener" data-c="main.contact.linkedinButton" data-c-href="main.contact.linkedinUrl">Message on LinkedIn ↗</a>
         <a class="btn btn-outline" href="mailto:admin@therohits.com">admin@therohits.com</a>
       </div>
     </div>
@@ -199,12 +199,13 @@
 
 <footer>
   <div class="container" style="display:flex; align-items:center; justify-content:space-between; width:100%;">
-    <span>© 2026 Rohiet Rathi. All rights reserved.</span>
+    <span data-c="main.footer.copyright">© 2026 Rohiet Rathi. All rights reserved.</span>
     <span><a href="rohits/index.html">Rohit's Supply And Logistics</a> · <a href="https://www.linkedin.com/in/rohiet-rathi-8a495818/" target="_blank" rel="noopener">LinkedIn</a></span>
   </div>
 </footer>
 
 
+<script src="content.js"></script>
 <script>
 (function(){
   var btn = document.querySelector('.nav-toggle');
