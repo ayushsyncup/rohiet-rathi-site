@@ -8,11 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=3">
+<link rel="stylesheet" href="../style.css?v=4">
 <style>
   .customer-grid { display:grid; grid-template-columns: repeat(4,1fr); gap:16px; margin-top:32px; }
   .customer-card { background: #fff; border:1px solid var(--border); border-radius: 14px; padding: 18px; display:flex; align-items:center; justify-content:center; height: 96px; width: 100%; box-sizing: border-box; overflow: hidden; }
   .customer-card img { width: 100%; height: 100%; object-fit: contain; }
+  a.customer-card { transition: border-color .15s ease, box-shadow .15s ease; }
+  a.customer-card:hover { border-color: var(--accent); box-shadow: 0 6px 18px rgba(31,30,29,0.07); }
   .customer-card .fallback-name { font-size: 14px; font-weight: 600; color: var(--text-muted); text-align: center; }
   .breadcrumb { font-size: 14px; color: var(--text-muted); margin-bottom: 18px; }
   .breadcrumb a { color: var(--accent-dark); font-weight: 600; }
@@ -53,34 +55,34 @@
   <section class="alt">
     <div class="container">
       <div class="customer-grid">
-        <div class="customer-card"><img src="assets/customers/jiomart.png" alt="JioMart"></div>
-        <div class="customer-card"><img src="assets/customers/swiggy-instamart.png" alt="Swiggy Instamart"></div>
+        <a class="customer-card" href="https://www.jiomart.com" target="_blank" rel="noopener" aria-label="JioMart"><img src="assets/customers/jiomart.png" alt="JioMart"></a>
+        <a class="customer-card" href="https://www.swiggy.com/instamart" target="_blank" rel="noopener" aria-label="Swiggy Instamart"><img src="assets/customers/swiggy-instamart.png" alt="Swiggy Instamart"></a>
         <div class="customer-card"><img src="assets/customers/bharti-bazaar.png" alt="Bharti Bazaar"></div>
-        <div class="customer-card"><img src="assets/customers/blinkit.png" alt="Blinkit"></div>
+        <a class="customer-card" href="https://blinkit.com" target="_blank" rel="noopener" aria-label="Blinkit"><img src="assets/customers/blinkit.png" alt="Blinkit"></a>
 
-        <div class="customer-card"><img src="assets/customers/dmart.png" alt="DMart"></div>
-        <div class="customer-card"><img src="assets/customers/dmart-ready.png" alt="DMart Ready"></div>
-        <div class="customer-card"><img src="assets/customers/dorabjees.png" alt="Dorabjee's"></div>
+        <a class="customer-card" href="https://www.dmart.in" target="_blank" rel="noopener" aria-label="DMart"><img src="assets/customers/dmart.png" alt="DMart"></a>
+        <a class="customer-card" href="https://www.dmart.in" target="_blank" rel="noopener" aria-label="DMart Ready"><img src="assets/customers/dmart-ready.png" alt="DMart Ready"></a>
+        <a class="customer-card" href="https://dorabjees.com" target="_blank" rel="noopener" aria-label="Dorabjee's"><img src="assets/customers/dorabjees.png" alt="Dorabjee's"></a>
         <div class="customer-card"><img src="assets/customers/dunzo.png" alt="Dunzo"></div>
 
-        <div class="customer-card"><img src="assets/customers/firstcry.png" alt="FirstCry"></div>
-        <div class="customer-card"><img src="assets/customers/flipkart.png" alt="Flipkart"></div>
-        <div class="customer-card"><img src="assets/customers/natures-basket.png" alt="Nature's Basket"></div>
+        <a class="customer-card" href="https://www.firstcry.com" target="_blank" rel="noopener" aria-label="FirstCry"><img src="assets/customers/firstcry.png" alt="FirstCry"></a>
+        <a class="customer-card" href="https://www.flipkart.com" target="_blank" rel="noopener" aria-label="Flipkart"><img src="assets/customers/flipkart.png" alt="Flipkart"></a>
+        <a class="customer-card" href="https://www.naturesbasket.co.in" target="_blank" rel="noopener" aria-label="Nature's Basket"><img src="assets/customers/natures-basket.png" alt="Nature's Basket"></a>
         <div class="customer-card"><img src="assets/customers/grahak-peth.png" alt="Grahak Peth"></div>
 
-        <div class="customer-card"><img src="assets/customers/indiamart.png" alt="IndiaMart"></div>
-        <div class="customer-card"><img src="assets/customers/bigbasket.png" alt="BigBasket"></div>
-        <div class="customer-card"><img src="assets/customers/more.jpg" alt="More"></div>
+        <a class="customer-card" href="https://www.indiamart.com" target="_blank" rel="noopener" aria-label="IndiaMart"><img src="assets/customers/indiamart.png" alt="IndiaMart"></a>
+        <a class="customer-card" href="https://www.bigbasket.com" target="_blank" rel="noopener" aria-label="BigBasket"><img src="assets/customers/bigbasket.png" alt="BigBasket"></a>
+        <a class="customer-card" href="https://more.in" target="_blank" rel="noopener" aria-label="More"><img src="assets/customers/more.jpg" alt="More"></a>
         <div class="customer-card"><img src="assets/customers/naya-bazaar.png" alt="Naya Bazaar"></div>
 
-        <div class="customer-card"><img src="assets/customers/nutritap.png" alt="NutriTap"></div>
-        <div class="customer-card"><img src="assets/customers/reliance-smart.png" alt="Reliance Smart"></div>
-        <div class="customer-card"><img src="assets/customers/reliance-fresh.png" alt="Reliance Fresh"></div>
-        <div class="customer-card"><img src="assets/customers/venkys.png" alt="Venky's"></div>
+        <a class="customer-card" href="https://nutritap.in" target="_blank" rel="noopener" aria-label="NutriTap"><img src="assets/customers/nutritap.png" alt="NutriTap"></a>
+        <a class="customer-card" href="https://www.relianceretail.com" target="_blank" rel="noopener" aria-label="Reliance Smart"><img src="assets/customers/reliance-smart.png" alt="Reliance Smart"></a>
+        <a class="customer-card" href="https://www.relianceretail.com" target="_blank" rel="noopener" aria-label="Reliance Fresh"><img src="assets/customers/reliance-fresh.png" alt="Reliance Fresh"></a>
+        <a class="customer-card" href="https://venkys.com" target="_blank" rel="noopener" aria-label="Venky's"><img src="assets/customers/venkys.png" alt="Venky's"></a>
 
-        <div class="customer-card"><img src="assets/customers/amazon.png" alt="Amazon"></div>
-        <div class="customer-card"><img src="assets/customers/zepto.jpg" alt="Zepto"></div>
-        <div class="customer-card"><img src="assets/customers/wellness-forever.png" alt="Wellness Forever"></div>
+        <a class="customer-card" href="https://www.amazon.in" target="_blank" rel="noopener" aria-label="Amazon"><img src="assets/customers/amazon.png" alt="Amazon"></a>
+        <a class="customer-card" href="https://www.zeptonow.com" target="_blank" rel="noopener" aria-label="Zepto"><img src="assets/customers/zepto.jpg" alt="Zepto"></a>
+        <a class="customer-card" href="https://www.wellnessforever.com" target="_blank" rel="noopener" aria-label="Wellness Forever"><img src="assets/customers/wellness-forever.png" alt="Wellness Forever"></a>
         <div class="customer-card"><div class="fallback-name">30+ more outlets</div></div>
       </div>
     </div>
