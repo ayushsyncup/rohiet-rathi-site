@@ -27,7 +27,11 @@ input:focus,textarea:focus{outline:2px solid var(--accent-light);border-color:va
 textarea{min-height:84px;resize:vertical}
 
 /* login */
-#login{max-width:560px;margin:8vh auto;padding:0 20px}
+#login,#gate{max-width:560px;margin:8vh auto;padding:0 20px}
+#gate .card{background:#fff;border:1px solid var(--border);border-radius:18px;padding:32px;max-width:420px;margin:0 auto}
+#gate h1{font-size:26px;margin-bottom:6px}
+#gate p.sub{color:var(--muted);margin-bottom:22px}
+.lab{display:block;font-weight:600;font-size:13px;margin-bottom:5px}
 #login .card{background:#fff;border:1px solid var(--border);border-radius:18px;padding:32px}
 #login h1{font-size:26px;margin-bottom:6px}
 #login p.sub{color:var(--muted);margin-bottom:22px}
@@ -78,10 +82,23 @@ details.item .body{padding:16px 16px 4px}
 </head>
 <body>
 
-<div id="login">
+<div id="gate">
   <div class="card">
     <h1>Site admin</h1>
-    <p class="sub">Edit every number, text, logo and link on the website. Changes go live about a minute after you publish.</p>
+    <p class="sub">Sign in to manage the website.</p>
+    <label class="lab" for="uid">ID</label>
+    <input type="text" id="uid" autocomplete="username" autocapitalize="off" spellcheck="false">
+    <label class="lab" for="pwd" style="margin-top:12px">Password</label>
+    <input type="password" id="pwd" autocomplete="current-password">
+    <button class="btn btn-primary" id="gateBtn" style="margin-top:18px">Sign in</button>
+    <div class="err" id="gateErr"></div>
+  </div>
+</div>
+
+<div id="login" style="display:none">
+  <div class="card">
+    <h1>Connect to GitHub</h1>
+    <p class="sub">One-time setup on this device. Publishing needs a GitHub access token; after you paste it once, this screen will not appear again.</p>
     <ol>
       <li>Open <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub &rarr; New fine-grained token</a> (signed in as the repository owner).</li>
       <li>Repository access: <b>Only select repositories</b> &rarr; <b>rohiet-rathi-site</b>.</li>
@@ -101,6 +118,7 @@ details.item .body{padding:16px 16px 4px}
     <span id="status">Loaded</span>
     <a class="btn btn-sm" id="viewSite" href="./" target="_blank" rel="noopener">View site</a>
     <button class="btn btn-sm" id="backup">Backup</button>
+    <button class="btn btn-sm" id="disconnect" title="Forget the GitHub token on this device">Disconnect GitHub</button>
     <button class="btn btn-sm" id="signout">Sign out</button>
   </header>
   <div class="layout">
@@ -197,9 +215,28 @@ details.item .body{padding:16px 16px 4px}
     start($('remember').checked).catch(function (e) { $('loginErr').textContent = e.message; token = ''; }).then(function () { $('signin').disabled = false; $('signin').textContent = 'Sign in'; });
   });
   $('tok').addEventListener('keydown', function (e) { if (e.key === 'Enter') $('signin').click(); });
-  $('signout').addEventListener('click', function () { if (dirty && !confirm('You have unpublished changes. Sign out anyway?')) return; localStorage.removeItem('siteAdminToken'); location.reload(); });
-  var saved = localStorage.getItem('siteAdminToken');
-  if (saved) { token = saved; start(true).catch(function (e) { token = ''; $('loginErr').textContent = e.message; }); }
+  $('signout').addEventListener('click', function () { if (dirty && !confirm('You have unpublished changes. Sign out anyway?')) return; sessionStorage.removeItem('siteAdminAuth'); location.reload(); });
+  $('disconnect').addEventListener('click', function () { if (!confirm('Forget the GitHub token on this device? You will need to paste it again.')) return; localStorage.removeItem('siteAdminToken'); sessionStorage.removeItem('siteAdminAuth'); location.reload(); });
+  // ---------- ID / password gate ----------
+  var GATE_HASH = '2cc58341deb8c89f2410893bb1ef1008453d960bd3a2ad582a7ad076ade1cd32';
+  function sha256(s) { return crypto.subtle.digest('SHA-256', new TextEncoder().encode(s)).then(function (b) { return Array.prototype.map.call(new Uint8Array(b), function (x) { return ('0' + x.toString(16)).slice(-2); }).join(''); }); }
+  function afterGate() {
+    $('gate').style.display = 'none';
+    var saved = localStorage.getItem('siteAdminToken');
+    if (saved) { token = saved; start(true).catch(function (e) { token = ''; localStorage.removeItem('siteAdminToken'); $('login').style.display = 'block'; $('loginErr').textContent = e.message; }); }
+    else { $('login').style.display = 'block'; }
+  }
+  function tryGate() {
+    var id = $('uid').value.trim().toLowerCase(), pw = $('pwd').value;
+    sha256(id + '\n' + pw).then(function (h) {
+      if (h === GATE_HASH) { sessionStorage.setItem('siteAdminAuth', GATE_HASH); $('gateErr').textContent = ''; afterGate(); }
+      else { $('gateErr').textContent = 'Wrong ID or password.'; $('pwd').value = ''; }
+    });
+  }
+  $('gateBtn').addEventListener('click', tryGate);
+  $('pwd').addEventListener('keydown', function (e) { if (e.key === 'Enter') tryGate(); });
+  $('uid').addEventListener('keydown', function (e) { if (e.key === 'Enter') $('pwd').focus(); });
+  if (sessionStorage.getItem('siteAdminAuth') === GATE_HASH) afterGate();
 
   // ---------- navigation ----------
   function buildNav() {
