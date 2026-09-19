@@ -1,4 +1,4 @@
-/* Fills the pages from content.json. Edit content via /admin.html */
+/* Fills the pages from content.json. Edit content via /admin */
 (function () {
   var script = document.currentScript;
   var root = new URL('.', script.src).href;
@@ -28,7 +28,7 @@
     },
     brandcard: function (i) {
       var ext = i.websiteUrl ? ' target="_blank" rel="noopener"' : '';
-      var href = i.websiteUrl ? u(i.websiteUrl) : (i.page ? root + 'rohits/' + i.page + '.html' : '#');
+      var href = i.websiteUrl ? u(i.websiteUrl) : (i.page ? root + 'rohits/' + i.page : '#');
       return '<a class="brand-card" href="' + esc(href) + '"' + ext + '><div class="mark">' + esc((i.name || '?').charAt(0)) + (i.logo ? '<img src="' + esc(u(i.logo)) + '" alt="" onerror="this.remove()">' : '') + '</div><div class="name">' + esc(i.name) + '</div></a>';
     },
     customer: function (i) {
@@ -70,8 +70,9 @@
     document.querySelectorAll('.js-address').forEach(function (a) { if (co.address) a.textContent = co.address; });
   }
 
-  fetch(root + 'content.json?v=' + Date.now(), { cache: 'no-store' })
-    .then(function (r) { return r.ok ? r.json() : null; })
+  function load(url) { return fetch(url, { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }); }
+  load(root + 'api/content')
+    .catch(function () { return load(root + 'content.json?v=' + Date.now()); })
     .then(function (c) { if (c) { window.SITE_CONTENT = c; apply(c); } })
     .catch(function () { /* keep the built-in defaults */ });
 })();
