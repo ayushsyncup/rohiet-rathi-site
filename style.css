@@ -62,6 +62,9 @@ nav {
 
 .brand span { color: var(--accent); }
 
+.brand-logo img { display: block; height: 38px; width: auto; }
+.nav-links a.nav-personal { color: var(--accent-dark); font-weight: 600; }
+
 .nav-links {
   display: flex;
   gap: 32px;
